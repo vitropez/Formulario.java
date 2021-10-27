@@ -46,7 +46,7 @@ public class CreateServlet extends HttpServlet {
          	 
          	
         	  Class.forName("com.mysql.jdbc.Driver");
-        	  Connection con= DriverManager.getConnection("jdbc:mysql://localhost:3306/amigos", "root", "123456");
+        	  Connection con= DriverManager.getConnection("jdbc:mysql://localhost:3306/amigos", "root", "");
         	  String consulta = "INSERT INTO amigo VALUES (?,?,?,?,?,?)";
         	  PreparedStatement ps=null;            	    
             ps= con.prepareStatement(consulta);
