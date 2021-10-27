@@ -10,12 +10,12 @@ public class AccesoBD {
     private String username = "root";
 
     // Clave de usuario de mysql
-    private String password = "123456789";
+    private String password = "";
 
-    // Nuestra librería mysql
+    // Nuestra librerÃ­a mysql
     private String driver = "com.mysql.jdbc.Driver";
 
-    // Objeto del tipo Connection para crear la conexión
+    // Objeto del tipo Connection para crear la conexiÃ³n
     private Connection con;
 
     public void Conexion()
@@ -27,9 +27,9 @@ public class AccesoBD {
             // Establecer la conexion con la base de datos
             con = DriverManager.getConnection(servidor, username, password);
 
-            System.out.println("Conexión realizada a la base de datos con éxito.");
+            System.out.println("ConexiÃ³n realizada a la base de datos con Ã©xito.");
         } catch (ClassNotFoundException | SQLException e) {
-            System.out.println("Error!, conexión fallida a la base de datos.");
+            System.out.println("Error!, conexiÃ³n fallida a la base de datos.");
         }
     }
 
